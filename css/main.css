@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto mono', monospace;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+
+
+.home-body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.grid-container {
+    max-width: 1260px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+header .header-icons-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    justify-content: end;
+    background-color: #48cfad;
+}
+
+
+header .header-icons-container .icons {
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+
+}
+
+header .icons span {
+    color: white;
+
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+
+nav .nav-logo-container {
+    margin-left: 50px;
+}
+
+nav .nav-logo-container img {
+    width: 220px;
+    margin-top: 10px;
+}
+
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+nav .profile-link a {
+    color: black;
+    border-bottom: 1px solid black;
+    font-size: 2rem;
+}
+
+.home-main {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background-image: url("./assets/imagenes/Cover.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.main-inicio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main .main-texto-info p {
+    font-family: 'Roboto mono', monospace;
+    font-size: 3rem;
+    font-weight: 700px;
+    line-height: 5rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.button-ingreso button {
+    width: 100px;
+    height: 40px;
+    background-color:#48cfad;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-family: 'Roboto mono', monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.blogs-news-container {
+    background-color: #e6e9ed;
+    padding: 32px 145px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.blogs-news-img-container img {
+    margin-top: 20px;
+    width: 90%;
+}
+
+.blogs-main-new h3 {
+    font-family: 'Roboto mono', monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+
+}
+
+
+.blogs-news-info-container p {
+    margin-top: 10px;
+    margin-bottom: 51px;
+    font-family: 'Roboto mono', monospace;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+    text-align: left;
+}
+
+.blogs-news-info-container h2 {
+    font-family: 'Roboto mono', monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.blogs-posts-container {
+    padding: 0 50px 40px;
+}
+
+.blogs-posts-container h3 {
+    border-bottom: 2px solid #dcdfe5;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.blogs-button {
+    border: 1px solid #4bd0ae;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+.blogs-button:hover {
+    background-color: #4bd0ae;
+}
+
+.posts-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap:10px;
+    row-gap: 50px;
+    margin-bottom: 50px;
+}
+
+.posts-container .posts-info {
+    padding: 10px 40px;
+    text-align: left;
+}
+
+.posts-container .posts-info img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.posts-info .texto-glogpost-info {
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+footer {
+    width: 100%;
+    height: 85px;
+    background-color: #22272d;
+    border-top: 30px solid #48cfad;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.blogpost-img-container {
+    padding: 0 50px 40px;
+}
+
+.blogpost-imagen-principal img {
+    width: 100%;
+}
+
+.blogpost-main-container {
+    padding: 0 50px 40px;
+}
+
+.blogpost-info-principal {
+    padding: 0 90px 40px;
+
+}
+
+.blogpost-main-container h3 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cdd2da;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.blogpost-main-container h1 {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.blogpost-main-container p {
+    font-size: 1.4rem;
+}
+
+.contact-main-container {
+    width: 100%;
+    padding: 40px 80px 40px;
+    background-color: #e6e9ed;
+    display: flex;
+    gap: 60px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.contact-main-container .contact-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.contact-main-container .contact-footer img  {
+    width: 90px;
+}
+
+.contact-main-container .blogpost-parrafo-contacto {
+    width: 180px;
+}
+
+.blogpost-parrafo-contacto a {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.blogpost-parrafo-contacto p {
+    margin-top: 10px;
+
+}
+
+.info-perfil-personal {
+    display: flex;
+    align-items: center;    
+    width: 100%;
+    padding: 50px 40px 40px 80px;
+    background-color: #e6e9ed;
+}
+
+.info-perfil-personal .info-perfin-imagen img {
+   width: 90%;
+}
+
+.info-perfin-informacion h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-perfin-informacion p {
+    font-size: 1.6rem;
+
+
+}
+
+.proyecto-personales-info {
+    padding: 10px 80px 60px;
+}
+
+.proyecto-personales-info h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+
+}
+
+
+.proyecto-personales-info .proyectos-section-propios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.proyecto-personales-info .proyectos-section-propios div {
+    padding: 0 10px;
+}
+
+.proyecto-personales-info .proyectos-section-propios h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.proyecto-personales-info .proyectos-section-propios p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+
+
+
+
